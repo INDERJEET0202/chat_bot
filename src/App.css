@@ -1,0 +1,85 @@
+/* ChatBot.css */
+
+body {
+  background-color: rgb(255, 255, 250);
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #ffe9b8;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 .99C4 .445 4.444 0 5 0c.552 0 1 .45 1 .99v4.02C6 5.555 5.556 6 5 6c-.552 0-1-.45-1-.99V.99zm6 8c0-.546.444-.99 1-.99.552 0 1 .45 1 .99v4.02c0 .546-.444.99-1 .99-.552 0-1-.45-1-.99V8.99z' fill='%23000000' fill-opacity='0.28' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.App-header {
+  margin-top: 5rem;
+}
+
+.chatbot-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 2rem;
+  background-color: #fff4e0;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.recording-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recording-controls {
+  text-align: center;
+}
+
+.record-button,
+.stop-button {
+  background-color: #d48b42;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.record-button:hover,
+.stop-button:hover {
+  background-color: #d48b42;
+}
+
+.audio-player {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.recording-animation {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.special{
+    font-weight: bold;
+    font-style: italic;
+    color: #ff0000;
+    /* uppercase */
+    
+}
